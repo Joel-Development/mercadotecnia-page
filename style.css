@@ -343,6 +343,7 @@ template {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 50px;
 }
 
 body {
@@ -371,11 +372,28 @@ img {
   text-decoration: none;
   font-weight: 500;
   text-align: center;
+  border: solid #4946ffff 2px;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.274);
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.274);
+}
+@media screen and (min-width: 850px) {
+  .btn:hover {
+    background-color: #fff;
+    color: #4946ffff;
+  }
 }
 .btn--big {
   font-size: 25px;
   height: 45px;
   width: 120px;
+  line-height: 24px;
+  border-radius: 22.5px;
+}
+.btn--small {
+  font-size: 18px;
+  line-height: 11px;
+  height: 35px;
+  width: 90px;
   border-radius: 22.5px;
 }
 
@@ -388,10 +406,14 @@ img {
   height: 50px;
 }
 
+.menu--on {
+  height: 100vh;
+}
+
 .main {
   position: relative;
   top: 0;
-  padding-top: 50px;
+  padding-top: 60px;
   background-color: #fff;
   min-height: 100vh;
   height: -webkit-max-content;
@@ -419,10 +441,9 @@ img {
   width: 40px;
 }
 .main .btn {
-  position: relative;
-  top: 75px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -457,4 +478,170 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+}
+
+.service {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.service__title {
+  font-size: 35px;
+  color: #4946ffff;
+}
+.service__img {
+  display: block;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.card__item {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  border-top: solid #4946ffff 4px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.178);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.178);
+  margin-bottom: 50px;
+  min-height: 400px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.card__item .btn {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+.card__offer {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  height: 80px;
+}
+.card__title {
+  color: #c73e1dff;
+  text-align: center;
+  font-size: 25px;
+}
+.card__price {
+  color: #f18f01ff;
+  font-size: 18px;
+  text-align: center;
+}
+.card__price .discount {
+  text-decoration: line-through;
+  color: #f18f01ff;
+  font-size: 13px;
+}
+.card__detail {
+  color: #f18f01ff;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.details {
+  color: #4946ffff;
+  line-height: 25px;
+}
+
+.contact {
+  padding-bottom: 50px;
+}
+.contact .card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+  width: 90%;
+  background-color: #c73e1dff;
+  color: #fff;
+}
+.contact .card__title {
+  color: #fff;
+  text-align: left;
+}
+.contact .card__path {
+  font-size: 15px;
+}
+.contact__img {
+  display: block;
+  max-width: 400px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact .grid-wraper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (50px)[3];
+  grid-template-rows: repeat(3, 50px);
+  margin-bottom: 10px;
+}
+.contact .grid-wraper > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.contact .grid-wraper > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.contact .grid-wraper > *:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.contact .grid-wraper > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.contact .grid-wraper > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.contact .grid-wraper > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+.contact .social {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.411);
+  height: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 25px;
+}
+.contact .social i {
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 850px) {
+  .contact .social i:hover {
+    color: rgba(255, 255, 255, 0.432);
+  }
 }

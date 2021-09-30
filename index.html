@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0ccdb7b859.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +17,8 @@
       <ul>
         <li><a href="#main" class="menu__link">Inicio</a></li>
         <li><a href="#about" class="menu__link">Sobre Nosotros</a></li>
-        <li><a href="#" class="menu__link">Servicios</a></li>
-        <li><a href="#" class="menu__link">Contacto</a></li>
+        <li><a href="#service" class="menu__link">Servicios</a></li>
+        <li><a href="#contact" class="menu__link">Contacto</a></li>
       </ul>
     </nav>
   </section>
@@ -39,6 +40,87 @@
       Somos un grupo de desarrolladores web, enfocados en la creación y mantenimiento de páginas y sitios web personalizados.
     </p>
     <img src="assets/img/about.svg" alt="about img" class="about__img">
+  </section>
+  <section class="service" id="service">
+    <h2 class="service__title">
+      Servicios
+    </h2>
+    <img src="assets/img/service.svg" alt="img-back" class="service__img">
+    <div class="card-wraper">
+      <div class="card__item">
+        <h3 class="card__title">
+          Landing
+        </h3>
+        <p class="card__price">
+          100$
+        </p>
+        <p class="card__detail">
+          Página Unica<br> + <br>Página Perfil
+        </p>
+        <ul class="details">
+          <li class="details__item">Página extra para perfil</li>
+          <li class="details__item">Dominio</li>
+          <li class="details__item">Hosting Gratis por 6 meses</li>
+        </ul>
+        <a href="#" class="btn btn--small">Comprar</a>
+      </div>
+      
+      <div class="card__item">
+        <img class="card__offer" src="assets/img/oferta.png" alt="offer">
+        <h3 class="card__title">
+          Sitio Web
+        </h3>
+        <p class="card__price">
+          <span class="discount">300$</span> 225$
+        </p>
+        <p class="card__detail">
+          5 Páginas
+        </p>
+        <ul class="details">
+          <li class="details__item">Página extra para perfil</li>
+          <li class="details__item">Dominio</li>
+          <li class="details__item">Hosting Gratis por 6 meses</li>
+          <li class="details__item">Mantenimiento por 6 meses</li>
+          <li class="details__item">Email</li>
+        </ul>
+        <a href="#" class="btn btn--small">Comprar</a>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="card">
+      <h2 class="card__title">
+        Contactanos
+      </h2>
+      <div class="grid-wraper">
+        <p class="card__path">
+          Email:
+        </p>
+        <p class="card__path">
+          example@gmail.com
+        </p>
+        <p class="card__path">
+          Numero Telefónico:
+        </p>
+        <p class="card__path">
+          +591 123-456-789
+        </p>
+        <p class="card__path">
+          Sitio web:
+        </p>
+        <p class="card__path">
+          www.main.example.com
+        </p>
+      </div>
+      <div class="social">
+        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://web.telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+
+    <img src="assets/img/contact.svg" alt="" class="contact__img">
   </section>
 </body>
 </html>

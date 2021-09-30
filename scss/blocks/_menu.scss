@@ -5,8 +5,10 @@
   background-color: $blue;
   max-width: 100%;
   width: 100%;
-  // min-height: 50vh;
   height: 50px;
+}
 
-
+.menu--on
+{
+  height: 100vh;
 }

@@ -1,0 +1,91 @@
+.service
+{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  &__title
+  {
+    font-size: $title-mobile;
+    color: $blue;
+  }
+
+  &__img
+  {
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+}
+
+.card
+{
+  &__item
+  {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    
+    border-top: solid $blue 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.178);
+    
+    margin-bottom: 50px;
+    min-height: 400px;
+    height: max-content;
+    
+    .btn
+    {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 30px;
+    }
+  }
+
+  &__offer
+  {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+
+    height: 80px;
+  }
+
+  &__title
+  {
+    color: $red;
+    text-align: center;
+    font-size: $title-card;
+  }
+
+  &__price
+  {
+    color: $orange;
+    font-size: 18px;
+    text-align: center;
+    
+    .discount
+    {
+      text-decoration: line-through;
+      color: $orange;
+      font-size: 13px;
+    }
+  }
+  
+  &__detail
+  {
+    color: $orange;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.details
+{
+  color: $blue;
+  line-height: 25px;
+}
