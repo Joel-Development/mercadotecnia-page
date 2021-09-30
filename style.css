@@ -385,7 +385,7 @@ img {
   background-color: #4946ffff;
   max-width: 100%;
   width: 100%;
-  min-height: 50vh;
+  height: 50px;
 }
 
 .main {
