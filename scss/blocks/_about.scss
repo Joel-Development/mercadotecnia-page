@@ -1,0 +1,39 @@
+.about
+{
+  background-color: $orange;
+
+  min-height: 100vh;
+  height: max-content;
+
+  padding-top: 30px;
+
+  &__title
+  {
+    font-size: $title-mobile;
+    color: $blue;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__text
+  {
+    color: $white;
+    font-weight: 500;
+    font-size: $text;
+    line-height: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 75px;
+  }
+
+  &__img
+  {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
