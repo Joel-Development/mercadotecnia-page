@@ -344,9 +344,12 @@ template {
 html {
   scroll-behavior: smooth;
   scroll-padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
+  overflow-x: hidden;
   position: relative;
   margin: 0;
   min-height: 100vh;
@@ -397,17 +400,99 @@ img {
   border-radius: 22.5px;
 }
 
-.menu {
+.header {
   position: fixed;
-  z-index: 100;
-  background-color: #4946ffff;
-  max-width: 100%;
+  top: 0;
+  z-index: 110;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #4946ffff;
+}
+.header__logo {
   height: 50px;
 }
 
-.menu--on {
-  height: 100vh;
+.toggle {
+  position: relative;
+  z-index: 120;
+  color: #c73e1dff;
+  font-size: 30px;
+}
+.toggle__menu {
+  position: relative;
+  z-index: 100;
+}
+
+.toggle--show {
+  color: #f18f01ff;
+}
+
+@media screen and (min-width: 700px) {
+  .toggle {
+    content: none;
+  }
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #4946ffff;
+  min-height: 100vh;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+.menu__item {
+  margin-bottom: 30px;
+}
+.menu__item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu--show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .main {

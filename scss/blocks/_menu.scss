@@ -1,14 +1,92 @@
+.header
+{
+  position: fixed;
+  top: 0;
+  z-index: 110;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background-color: $blue;
+  
+  &__logo
+  {
+    height: 50px;
+  }
+}
+
+.toggle
+{
+  position: relative;
+  z-index: 120;
+  color: $red;
+  font-size: 30px;
+
+  &__menu
+  {
+    position: relative;
+    z-index: 100;
+  }
+}
+
+.toggle--show
+{
+  color: $orange;
+}
+
+@media screen and (min-width: 700px) {
+  .toggle
+  {
+    content: none;
+  }
+}
+
 .menu
 {
   position: fixed;
-  z-index: 100;
+  top: 0;
+  right: 0;
+  
   background-color: $blue;
-  max-width: 100%;
-  width: 100%;
-  height: 50px;
+  min-height: 100vh;
+  min-width: max-content;
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 100;
+// listas
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
+  
+  &__item
+  {
+    margin-bottom: 30px;
+    
+    a
+    {
+      color: $white;
+      text-decoration: none;
+    }
+  }
 }
 
-.menu--on
+.menu--show 
 {
-  height: 100vh;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in;
 }
