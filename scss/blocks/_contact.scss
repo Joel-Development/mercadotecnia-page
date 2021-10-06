@@ -75,3 +75,31 @@
     }
   }
 }
+
+@media screen and (min-width: 750px) {
+  .contact
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .card
+    {
+      max-width: 500px;
+      width: 50%;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    
+    &__img
+    {
+      margin-left: 10px;
+      margin-right: 10px;
+      max-width: 500px;
+      width: 50%;
+      vertical-align: middle;
+    }
+  }
+}

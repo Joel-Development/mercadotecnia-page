@@ -1,5 +1,6 @@
 .about
 {
+  box-sizing: border-box;
   background-color: $orange;
 
   min-height: 100vh;
@@ -35,5 +36,47 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .about
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content
+    {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__title
+    {
+      font-size: $title-desk;
+    }
+
+    &__img
+    {
+      max-height: 100vh;
+      height: 800px;
+
+      max-width: 600px;
+      width: 50%;
+    }
+
+    &__text
+    {
+      margin-bottom: 10px;
+    }
+
+    &__img
+    {
+      margin-bottom: 0;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   }
 }

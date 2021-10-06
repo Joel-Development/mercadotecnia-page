@@ -14,6 +14,7 @@
   padding-right: 10px;
 
   background-color: $blue;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   
   &__logo
   {
@@ -40,12 +41,18 @@
   color: $orange;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   .toggle
   {
-    content: none;
+    display: none;
   }
 }
+
+.nav
+{
+  position: fixed;
+}
+
 
 .menu
 {
@@ -57,14 +64,14 @@
   min-height: 100vh;
   min-width: max-content;
   width: 200px;
-
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  
   z-index: 100;
-// listas
+  // listas
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -76,6 +83,7 @@
   &__item
   {
     margin-bottom: 30px;
+    word-spacing: 2px;
     
     a
     {
@@ -83,6 +91,39 @@
       text-decoration: none;
     }
   }
+}
+
+@media screen and (min-width: 750px) {
+  .nav
+  {
+    position:  initial;
+  }
+  
+  .menu
+  {
+    position: initial;
+
+    background-color: transparent;
+    min-height: initial;
+    height: 50px;
+    width: initial;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    transform: translateX(0);
+
+    &__item
+    {
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 0;
+      line-height: 50px;
+    }
+  }
+
 }
 
 .menu--show 
