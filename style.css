@@ -414,6 +414,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
+  max-width: 100%;
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -546,11 +547,13 @@ img {
   height: max-content;
 }
 .main__img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-left: 10px;
   margin-right: 10px;
   min-width: 200px;
   max-width: 100%;
-  width: 400px;
+  width: 300px;
 }
 .main .title {
   position: relative;

@@ -11,12 +11,13 @@
 
   &__img
   {
+    box-sizing: border-box;
     margin-left: 10px;
     margin-right: 10px;
 
     min-width: 200px;
     max-width: 100%;
-    width: 400px;
+    width: 300px;
   }
   
   .title
